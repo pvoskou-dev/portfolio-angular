@@ -1,0 +1,201 @@
+<header>
+  <nav class="main-nav">
+    <a class="icon">{{ abletonContent.icon }}</a>
+    <a href="">{{ abletonContent.header.mainNav.link1 }}</a>
+    <a href="">{{ abletonContent.header.mainNav.link2 }}</a>
+    <a href="">{{ abletonContent.header.mainNav.link3 }}</a>
+    <a href="">{{ abletonContent.header.mainNav.link4 }}</a>
+    <a href="">{{ abletonContent.header.mainNav.link5 }}</a>
+    <a href="">{{ abletonContent.header.mainNav.link6 }}</a>
+    <a href="">{{ abletonContent.header.mainNav.link7 }}</a>
+  </nav>
+  <nav class="account-nav">
+    <a id="try-live" href="">{{ abletonContent.header.accountNav.link1 }}</a>
+    <a class="smaller-link" href="">{{
+      abletonContent.header.accountNav.link2
+    }}</a>
+    <a class="smaller-link" href="">{{
+      abletonContent.header.accountNav.link3
+    }}</a>
+  </nav>
+</header>
+<section class="ableton">
+  <div class="about-nav">
+    <a href="" class="">{{ abletonContent.about.link1 }}</a>
+    <a href="" class="">{{ abletonContent.about.link2 }}</a>
+  </div>
+  <div class="image-1">
+    <img
+      class="image-1"
+      [src]="abletonContent.images.image1"
+      alt="main-image"
+    />
+  </div>
+  <div class="text">
+    <p class="main-text">{{ abletonContent.text.mainText1 }}</p>
+    <p class="details-text">
+      {{ abletonContent.text.detailsText1 }}
+    </p>
+  </div>
+  <div class="second-images">
+    <div class="image-2-container">
+      <img class="image-2" [src]="abletonContent.images.image2" alt="" />
+    </div>
+    <div class="image-3-container">
+      <img class="image-3" [src]="abletonContent.images.image3" alt="" />
+    </div>
+  </div>
+  <div class="text">
+    <p class="main-text">{{ abletonContent.text.mainText2 }}</p>
+    <p class="details-text">
+      {{ abletonContent.text.detailsText2 }}
+    </p>
+  </div>
+  <div class="first-video">
+    <iframe class="video1" [src]="getVideoUrl1()" frameborder="0"></iframe>
+  </div>
+  <div class="text">
+    <p class="main-text">{{ abletonContent.text.mainText3 }}</p>
+    <p class="details-text">
+      {{ abletonContent.text.detailsText3 }}
+    </p>
+  </div>
+  <div class="third-images">
+    <div class="third-images-left-side">
+      <div>
+        <div class="image-4-container">
+          <img class="image-4" [src]="abletonContent.images.image4" alt="" />
+        </div>
+        <div class="image-5-container">
+          <img class="image-5" [src]="abletonContent.images.image5" alt="" />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="third-images-right-side">
+        <div class="image-6-container">
+          <img class="image-6" [src]="abletonContent.images.image6" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  6
+  <div class="text">
+    <p class="main-text">{{ abletonContent.text.mainText4 }}</p>
+    <p class="details-text">
+      {{ abletonContent.text.detailsText4 }}
+    </p>
+  </div>
+  <div class="second-video">
+    <iframe class="video2" [src]="getVideoUrl2()" frameborder="0"></iframe>
+  </div>
+  <div class="text">
+    <p class="main-text">{{ abletonContent.text.mainText5 }}</p>
+    <p class="details-text">
+      {{ abletonContent.text.detailsText5 }}
+    </p>
+  </div>
+  <div class="fourth-images">
+    <div class="image-7-container">
+      <img class="image-7" [src]="abletonContent.images.image7" alt="" />
+    </div>
+    <div class="image-8-container">
+      <img class="image-8" [src]="abletonContent.images.image8" alt="" />
+    </div>
+  </div>
+  <div class="text">
+    <p class="main-text">{{ abletonContent.text.mainText6 }}</p>
+    <p class="details-text">
+      {{ abletonContent.text.detailsText6 }}
+    </p>
+  </div>
+  <div class="final-container">
+    <div class="image-9-container">
+      <img class="image-9" [src]="abletonContent.images.image9" alt="" />
+    </div>
+    <div class="text-container9">
+      <p class="main-text">{{ abletonContent.text.mainText7 }}</p>
+      <p class="details-text">
+        <a href="" class="jobs-link">{{ abletonContent.text.detailsText7 }}</a>
+      </p>
+    </div>
+  </div>
+</section>
+<footer>
+  <h1 class="footerHeader">{{ abletonContent.footerHeader }}</h1>
+  <div class="footer-grid">
+    <div class="footer-section">
+      <a href="" class="secondary">{{ abletonContent.footerSection1.link1 }}</a>
+      <a href="" class="secondary">{{ abletonContent.footerSection1.link2 }}</a>
+      <a href="" class="secondary">{{ abletonContent.footerSection1.link3 }}</a>
+      <div class="social-media">
+        <div class="icon">
+          <i class="fa-brands fa-square-facebook"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-square-twitter"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-square-youtube"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-square-instagram fa-4"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      {{ abletonContent.footerSection2.header }}
+      <a href="" class="secondary">{{ abletonContent.footerSection2.link1 }}</a>
+      <a href="" class="secondary">{{ abletonContent.footerSection2.link2 }}</a>
+      <a href="" class="secondary">{{ abletonContent.footerSection2.link3 }}</a>
+    </div>
+    <div class="footer-section">
+      {{ abletonContent.footerSection3.header }}
+      <p class="email-text">
+        {{ abletonContent.footerSection3.text }}
+      </p>
+      <div class="email-row">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          [placeholder]="abletonContent.footerSection3.emailPlaceholder"
+        /><button class="signup">
+          {{ abletonContent.footerSection3.buttonText }}
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      {{ abletonContent.footerSection4.header }}
+      <a href="" class="secondary">{{ abletonContent.footerSection4.link1 }}</a>
+      <a href="" class="secondary">{{ abletonContent.footerSection4.link2 }}</a>
+      <a href="" class="secondary">{{ abletonContent.footerSection4.link3 }}</a>
+    </div>
+    <div class="footer-section">
+      {{ abletonContent.footerSection5.header }}
+      <a href="" class="secondary">{{ abletonContent.footerSection5.link1 }}</a>
+      <a href="" class="secondary">{{ abletonContent.footerSection5.link2 }}</a>
+    </div>
+    <div class="footer-section">
+      {{ abletonContent.footerSection6.header }}
+      <div class="select">{{ abletonContent.footerSection6.link1 }}</div>
+      <div class="select">{{ abletonContent.footerSection6.link2 }}</div>
+    </div>
+  </div>
+  <div class="footer-row">
+    <div class="footer-links">
+      <a href="">{{ abletonContent.mainFooterLinks.link1 }}</a>
+      <a href="">{{ abletonContent.mainFooterLinks.link2 }}</a>
+      <a href="">{{ abletonContent.mainFooterLinks.link3 }}</a>
+      <a href="">{{ abletonContent.mainFooterLinks.link4 }}</a>
+      <a href="">{{ abletonContent.mainFooterLinks.link5 }}</a>
+      <a href="">{{ abletonContent.mainFooterLinks.link6 }}</a>
+      <a href="">{{ abletonContent.mainFooterLinks.link7 }}</a>
+    </div>
+    <div class="madeIn">
+      {{ abletonContent.madeIn }}<a class="icon">{{ abletonContent.icon }}</a>
+    </div>
+  </div>
+</footer>

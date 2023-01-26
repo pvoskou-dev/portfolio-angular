@@ -1,0 +1,31 @@
+<section class="welcome-grid">
+  <div class="welcome-text-column">
+    <h1 class="welcome-headline">{{ welcomeText.title }}</h1>
+    <p class="welcome-text">
+      {{ welcomeText.content }}
+    </p>
+    <div class="buttons">
+      <button routerLink="/projects">{{ welcomeText.buttons.text1 }}</button
+      ><button routerLink="/profile">{{ welcomeText.buttons.text2 }}</button>
+    </div>
+  </div>
+  <div class="welcome-images-column">
+    <div class="sample-images">
+      <div class="image-1">
+        <div class="image"><img [src]="welcomeImages[2].image" [alt]="welcomeImages[2].name" /></div>
+        <div class="header">{{ welcomeImages[2].type }}</div>
+        <div class="image-description">{{welcomeImages[2].name}}</div>
+      </div>
+      <div class="image-2">
+        <div class="image"><img [src]="welcomeImages[1].image" [alt]="welcomeImages[1].name" /></div>
+        <div class="header">{{ welcomeImages[1].type }}</div>
+        <div class="image-description">{{welcomeImages[1].name}}</div>
+      </div>
+      <div class="image-3">
+        <div class="image"><img [src]="welcomeImages[0].image" [alt]="welcomeImages[0].name" /></div>
+        <div class="header">{{ welcomeImages[0].type }}</div>
+        <div class="image-description">{{welcomeImages[0].name}}</div>
+      </div>
+    </div>
+  </div>
+</section>

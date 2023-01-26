@@ -1,0 +1,9 @@
+section{
+  display: grid;
+  columns: 1;
+  /* width: fit-content; */
+  min-height: 33%;
+  margin: auto;
+
+  /* height: 50%; */
+}

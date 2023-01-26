@@ -1,0 +1,7 @@
+Create a a backend database that will fetch the images and links
+
+list over the projects so that the sites are displayed in the projects section
+
+create different language versions
+
+create form to capture details

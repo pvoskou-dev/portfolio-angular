@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color: white;
+  --secondary-color: #4f2f2f;
+  --background-color: bisque;
+  /* --primary-color: #2055da; */
+  /* --secondary-color: #a4973f; */
+
+  --text-color: black;
+}
+
+* {
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  /* min-height: 50px; */
+}
+html {
+  padding: 0px;
+  margin: 0px;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-color);
+  font-family: Verdana, sans serif;
+  margin: 0px;
+  font-size: 1rem;
+}
+div {
+  width: 100%;
+  /* min-height: 50px; */
+}

@@ -1,0 +1,36 @@
+<section class="features">
+  <div class="features-description">
+    <p class="features-title">
+      {{ features.title }}
+    </p>
+  </div>
+  <div class="features-demonstration">
+    <p class="features-text">{{ features.text }}</p>
+  </div>
+  <div class="features-row">
+    <div class="features-box">
+      <div class="icon">React Icon</div>
+      <div class="features-details">{{ features.details.box1 }}</div>
+    </div>
+    <div class="features-box">
+      <div class="icon">Angular Icon</div>
+      <div class="features-details">{{ features.details.box2 }}</div>
+    </div>
+  </div>
+  <div class="features-row">
+    <div class="features-box">
+      <div class="icon">Javascript Icon</div>
+      <div class="features-details">{{ features.details.box3 }}</div>
+    </div>
+    <div class="features-box">
+      <div class="icon">Algorithms Icon</div>
+      <div class="features-details">{{ features.details.box4 }}</div>
+    </div>
+  </div>
+  <div class="request">
+    <p class="features-text">
+      {{features.request}}
+    </p>
+    <button routerLink="/contact" class="contact">{{features.buttonText}}</button>
+  </div>
+</section>

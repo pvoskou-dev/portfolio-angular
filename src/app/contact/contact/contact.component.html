@@ -1,0 +1,45 @@
+<app-header></app-header>
+<section class="contact">
+  <div class="contact-column">
+    <div class="contact-heading">
+      <h1>{{ contact.title }}</h1>
+    </div>
+    <div class="contact-text">
+      <p>{{ contact.question }}</p>
+    </div>
+    <div class="form">
+      <form action="">
+        <label for="name">{{ contact.name }}</label>
+        <div class="name">
+          <input
+            type="text"
+            id="name"
+            class="name"
+            [placeholder]="contact.placeholderText.name"
+          />
+        </div>
+        <label for="email">{{ contact.email }}</label>
+        <div class="email">
+          <input
+            type="email"
+            id="email"
+            class="email"
+            [placeholder]="contact.placeholderText.email"
+          />
+        </div>
+        <label for="message">{{ contact.message }}</label>
+        <div class="message">
+          <textarea
+            id="message"
+            name="message"
+            [placeholder]="contact.placeholderText.message"
+          ></textarea>
+        </div>
+        <div class="submit-contact-button">
+          <button class="submit">{{ contact.buttonText }}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

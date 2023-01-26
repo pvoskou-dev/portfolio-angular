@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "portfolio-angular-80f9d": {
+      "hosting": {
+        "portfolio-angular": [
+          "portfolio-angular-80f9d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "portfolio-angular-80f9d"
+  }
+}

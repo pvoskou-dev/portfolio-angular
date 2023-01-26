@@ -1,0 +1,40 @@
+<header class="site-header">
+  <div class="site-name">Portfolio</div>
+  <div *ngIf="isMobile" class="nav-icon">
+    <button type="button" *ngIf="!isOpen" class="icon" (click)="openMenu()">
+      <i class="fa fa-bars fa-2xl"></i>
+    </button>
+  </div>
+  <nav class="nav-bar">
+    <a id="home-link" routerLink="/" routerLinkActive="active">Home</a>
+    <a id="projects-link" routerLink="/projects" routerLinkActive="active"
+      >Projects</a
+    >
+    <a id="profile-link" routerLink="/profile" routerLinkActive="active"
+      >Profile</a
+    >
+    <a id="contact-link" routerLink="/contact" routerLinkActive="active"
+      >Contact</a
+    >
+  </nav>
+  <nav *ngIf="isOpen" class="nav-bar-mobile">
+    <button class="close-menu" (click)="closeMenu()" aria-label="close menu">
+      X
+    </button>
+
+    <a id="home-link" routerLink="/" routerLinkActive="active">Home</a>
+
+    <a id="projects-link" routerLink="/projects" routerLinkActive="active"
+      >Projects</a
+    >
+
+    <a id="profile-link" routerLink="/profile" routerLinkActive="active"
+      >Profile</a
+    >
+
+    <a id="contact-link" routerLink="/contact" routerLinkActive="active"
+      >Contact</a
+    >
+    <
+  </nav>
+</header>

@@ -1,0 +1,14 @@
+<div class="projects-list">
+  <div class="project" *ngFor="let project of projectsList">
+    <div class="image">
+      <img [src]="project.image" [alt]="project.name" class="project-image" />
+    </div>
+    <div class="content">
+      <div class="header">{{ project.type }}</div>
+      <div class="link">
+        <a [routerLink]="project.name" class="" target="_blank">{{project.name}}</a>
+      </div>
+
+    </div>
+  </div>
+</div>

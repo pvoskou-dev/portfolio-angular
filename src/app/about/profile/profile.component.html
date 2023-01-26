@@ -1,0 +1,40 @@
+<app-header></app-header>
+<section class="profile">
+  <div class="profile-column">
+    <div class="profile-top">
+      <div class="profile-image">
+        <img [src]="profile.image" />
+      </div>
+      <div class="profile-highlights">
+        <ul>
+          <li>{{ profile.highlight.text1 }}</li>
+          <li>{{ profile.highlight.text2 }}</li>
+          <li>{{ profile.highlight.text3 }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="profile-about">
+      <p>
+        {{ profile.professional }}
+      </p>
+    </div>
+    <div class="profile-experience">
+      <ul>
+        <li>{{ profile.experiences.text1 }}</li>
+        <li>{{ profile.experiences.text2 }}</li>
+        <li>{{ profile.experiences.text3 }}</li>
+      </ul>
+    </div>
+    <div class="profile-leisure">
+      <p>
+        {{ profile.leisure }}
+      </p>
+    </div>
+    <div class="contact">
+      <button routerLink="/contact" class="contact">
+        {{ profile.buttonText }}
+      </button>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

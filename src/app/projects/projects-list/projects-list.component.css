@@ -1,0 +1,71 @@
+@media (max-width: 2560px) {
+  img {
+    width: 350px;
+    margin: auto;
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--background-color);
+  }
+  .project {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+  }
+  .image {
+    display: flex;
+    margin: auto;
+    padding: 25px;
+  }
+  .content {
+    margin: auto;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .header {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+  }
+  .link {
+    font-size: 3rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1440px) {
+
+  .projects-list {
+    max-width: 1400px;
+  }
+
+}
+@media (max-width: 1024px) {
+
+  .image {
+    padding: 15px;
+  }
+  img {
+    width: 260px;
+  }
+  .projects-list {
+    max-width: 1200px;
+  }
+  .project {
+    max-width: 310px;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  .link {
+    font-size: 2rem;
+  }
+}
+
